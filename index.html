@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Canvas for background particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="hbd.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="app">
+        <!-- Lights -->
+        <div id="lights-container">
+            <img src="bulb.png" class="bulb" data-color="bulb_yellow.png" alt="Light Bulb">
+            <img src="bulb.png" class="bulb" data-color="bulb_red.png" alt="Light Bulb">
+            <img src="bulb.png" class="bulb" data-color="bulb_blue.png" alt="Light Bulb">
+            <img src="bulb.png" class="bulb" data-color="bulb_green.png" alt="Light Bulb">
+            <img src="bulb.png" class="bulb" data-color="bulb_pink.png" alt="Light Bulb">
+            <img src="bulb.png" class="bulb" data-color="bulb_orange.png" alt="Light Bulb">
+        </div>
+
+        <!-- Banners & Decor -->
+        <div id="decor-container">
+            <img src="vine.png" id="vine-left" class="vine" alt="Vine">
+            <img src="vine.png" id="vine-right" class="vine" alt="Vine">
+            <img src="Balloon-Border.png" id="balloon-border" alt="Balloon Border">
+            <br>
+            <img src="banner.png" id="banner" alt="Happy Birthday Banner">
+        </div>
+
+        <!-- Balloons will float here -->
+        <div id="balloons-container"></div>
+
+        <!-- Cake -->
+        <div id="cake-container">
+            <img src="cake128.png" id="cake" alt="Birthday Cake">
+        </div>
+
+        <!-- Photo Reveal -->
+        <div id="photo-container">
+            <div class="polaroid">
+                <img src="bd1.jpg" id="person-photo" alt="Special Person">
+                <p>Happy Birthday Lily ❤️</p>
+            </div>
+        </div>
+
+        <!-- Story / Final Message -->
+        <div id="story-container">
+        </div>
+
+        <!-- Action Button -->
+        <div id="controls-container">
+            <button id="main-action-btn" class="glow-button">Turn On Lights</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
